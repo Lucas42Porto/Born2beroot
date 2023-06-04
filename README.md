@@ -42,12 +42,19 @@ Coloque a senha e pronto, ja tem acesso a VM, atraves do seu terminal. xD
 sudo nano /etc/sudoers --> Alterar arquivo com as configuracoes exigidas no projeto para sudo
 
 ----------  Defaults --------- passwd tries=3
+	
 ----------  Defaults --------- badpass message-"Password is wrong, please try again!”
+	
 ----------  Defaults --------- logfile="/var/log/sudo.log"
+	
 ----------  Defaults --------- log_input, log_output
+	
 ----------  Defaults --------- iolog_dir="/var/log/sudo"
+	
 ----------  Defaults --------- requiretty
+	
 ----------  Defaults --------- secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+	
 
 sudo nano /etc/login.defs --> Alterar o arquivo de config de login
 -->PASS MAX DAYS — 99999 --> PASS MAX DAYS 30 
@@ -189,6 +196,7 @@ sudo nano /var/www/html/wp-config.php			--> abrimos o arquivo copiado com o nano
 @sudo service lighttpd force-reload ------> reiniciamos o servidor lighttpd
 
 5. Servico adicional 
+	
 5.1 FTP
 sudo apt install vsftpd		--> Pacote necessário para o servidor FTP.
 sudo ufw allow 21			--> Damos permissão TCP UDP para a porta 21 do firewall.
