@@ -365,7 +365,8 @@ sudo ufw reload//
 - `sudo ufw delete rule number`
 - `ssh your_user_id@127.0.0.1 -p 4242` -  do this in terminal to show that SSH to port 4242 is working
 	
-  Fontes:
+ Fontes:
+	
 https://github.com/pasqualerossi/Born2BeRoot-Guide
 	
 https://github.com/gemartin99/Born2beroot-Tutorial
